@@ -78,8 +78,17 @@ h3 {
 }
 .float-text {
   position: absolute;
-  bottom: 50px;
   left: 40%;
+  bottom: 50px;
+}
+.float-text-cate {
+  position: absolute;
+  left: 50%;
+  transform: translateX(50%);
+  align-self: center;
+  bottom: -1500px;
+  font-size: 32px;
+  color: black !important;
 }
 fieldset {
   border: 1px solid white;

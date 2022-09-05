@@ -28,7 +28,7 @@ body {
             <p id="formtxt"> Phone Number: </P><br>
             <input type="number" name="phone_number" placeholder="Enter Phone Number"id="box5" ><br><br>
 
-            <input type="submit" name="submit" value="Login" class="btn-primary" id="btn6">
+            <input type="submit" name="submit" value="Sign Up" class="btn-primary" id="btn6">
             <br><br>
             <p>Already have an account? <a href="/onlinefood-order/index.php">Log In.</a></p>
 </form>
@@ -50,38 +50,44 @@ body {
         $username = $_POST['username'];
         $password = md5($_POST['password']); //Password Encryption with MD5
         $phone_number = $_POST['phone_number']; //Password Encryption with MD5
-
-        //2. SQL Query to Save the data into database
+        if(preg_match('/^[0-9]{10}+$/', $phone_number)) {
+            //2. SQL Query to Save the data into database
         $sql = "INSERT INTO tbl_user SET 
-            full_name='$full_name',
-            username='$username',
-            password='$password',
-            phone_number='$phone_number'
-        ";
- 
-        //3. Executing Query and Saving Data into Datbase
-        $res = mysqli_query($conn, $sql) or die(mysqli_error());
+        full_name='$full_name',
+        username='$username',
+        password='$password',
+        phone_number='$phone_number'
+    ";
 
-        //4. Check whether the (Query is Executed) data is inserted or not and display appropriate message
-        if($res==TRUE)
-        {
-            //Data Inserted
-            //echo "Data Inserted";
-            //Create a Session Variable to Display Message
-            $_SESSION['add'] = "<div class='success'>User Registration Successful.</div>";
-            //Redirect Page to Manage Admin
-            header("location:".SITEURL.'index.php');
-        }
-        else
-        {
-            //FAiled to Insert DAta
-            //echo "Faile to Insert Data";
-            //Create a Session Variable to Display Message
-            $_SESSION['add'] = "<div class='error'>Failed to Add Admin.</div>";
-            //Redirect Page to Add Admin
+    //3. Executing Query and Saving Data into Datbase
+    $res = mysqli_query($conn, $sql) or die(mysqli_error());
+
+    //4. Check whether the (Query is Executed) data is inserted or not and display appropriate message
+    if($res==TRUE)
+    {
+        //Data Inserted
+        //echo "Data Inserted";
+        //Create a Session Variable to Display Message
+        $_SESSION['add'] = "<div class='success'>User Registration Successful.</div>";
+        //Redirect Page to Manage Admin
+        header("location:".SITEURL.'index.php');
+    }
+    else
+    {
+        //FAiled to Insert DAta
+        //echo "Faile to Insert Data";
+        //Create a Session Variable to Display Message
+        $_SESSION['add'] = "<div class='error'>Failed to Create User.</div>";
+        //Redirect Page to Add Admin
+        header("location:".SITEURL.'register.php');
+    }
+
+        } else {
+            $_SESSION['add'] = "<div class='error'>Phone Number Invalid.</div>";
             header("location:".SITEURL.'register.php');
-        }
 
+        }
+        
     }
     
 ?>
