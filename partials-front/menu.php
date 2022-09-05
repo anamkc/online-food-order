@@ -38,6 +38,7 @@
                     <li>
                         <a href="#foot">Contact</a>
                     </li>
+                    <li><a href="<?php echo SITEURL; ?>logout.php">Logout</a></li>
                 </ul>
             </div>
 

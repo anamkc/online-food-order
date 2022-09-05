@@ -6,7 +6,8 @@
         <link rel="stylesheet" href="../css/admin.css">
         <style>
 body {
-    background-image: url(../images/back.jfif);
+    background: url(../images/sushi.jpg) no-repeat fixed center;
+    background-size: cover;
 }
 </style>
     </head>
