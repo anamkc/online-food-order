@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  padding: 1%;
+  width: 90%;
+  margin: 0 auto;
+}
+.wrapper1 {
+  padding: 1%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+.tbl-full {
+  width: 100%;
+}
+.tbl-30 {
+  width: 50%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+table tr th {
+  border-bottom: 1px solid black;
+  padding: 1%;
+  text-align: left;
+}
+
+table tr td {
+  padding: 
+}
+
+.btn-primary {
+  background-color: #1e90ff;
+  padding: 1%;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 5px 10px;
+}
+.btn-primary:hover {
+  background-color: #3742fa;
+}
+
+.btn-secondary {
+  background-color: yellowgreen;
+  padding: 1%;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 5px 10px;
+}
+.btn-secondary:hover {
+  background-color: #2ed573;
+}
+
+.btn-danger {
+  background-color: red;
+  padding: 1%;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 5px 10px;
+}
+.btn-danger:hover {
+  background-color: #5d9e5f;
+}
+
+.success {
+  color: #2ed573;
+}
+.error {
+  color: black;
+  font-weight: bold;
+}
+
+/* CSS for Menu */
+.menu {
+  border-bottom: 1px solid grey;
+}
+.menu ul {
+  list-style-type: none;
+}
+.menu ul li {
+  display: inline;
+  padding: 1%;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #5d9e5f;
+}
+.menu ul li a:hover {
+  color: #5d9e5f;
+}
+
+/* CSS for main-content */
+.main-content {
+  background-color: #f1f2f6;
+  padding: 3% 0;
+}
+
+.col-4 {
+  width: 18%;
+  background-color: white;
+  margin: 1%;
+  padding: 2%;
+  float: left;
+}
+
+/* CSS for Footer */
+.footer {
+  background-color: #5d9e5f;
+  color: white;
+}
+
+/* CSS for Login */
+.login {
+  
+  width: 50%;
+  margin: 10% auto;
+  padding: 2%;
+  
+}
+
+#log {
+ 
+  width: 50%;
+  
+}
+
+#box5 {
+  font-family: inherit;
+  width: 100%;
+  outline: none;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  padding: 0.9rem 0.7rem;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+  font-size: 17px;
+  color: #4A4A4A;
+  text-indent: 40px;
+  
+}
+
+#formtxt{
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+#btn6{
+    color: #FFFFFF; 
+    background-color: #398AB9; 
+    width: 30%; 
+    transition: 0.5s; 
+    border: .2vmax solid #398AB9; 
+    padding: 1vmax 3vmax; 
+    text-decoration: none; 
+    border-radius: 101vmax; 
+    cursor: pointer; 
+  }
+  
+  #btn6:hover {
+    padding: 1.25vmax 4vmax; 
+  }
+
+
+  /* Navbar */
+  #admin1 {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #1b1b1b;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+  #admin1 .logo6{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  #admin1 ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  #admin1 ul li{
+    margin: 0 5px;
+  }
+  #admin1 ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  #admin1 ul li a.active,
+  #admin1 ul li a:hover{
+    color: #111;
+    background: #fff;
+    transition: .5s;
+  }
+  #admin1 .menu-btn1 i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  @media (max-width: 1000px){
+    #admin1 {
+      padding: 0 40px 0 50px;
+    }
+  }
+  @media (max-width: 979px) {
+    #admin1 .menu-btn1 i{
+      display: block;
+    }
+    
+   
+    #admin1 ul{
+      position: absolute;
+      top: 80px;
+      left: 0%;
+      background: #111;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+    }
+    
+   
+    #admin1 ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    #admin1 ul li a{
+      width: 100%;
+      
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .fa-bars:before {
+      content: "\f0c9";
+      padding-right: 100px;
+  }
+ 
+   
+    #admin1 ul li a.active,
+    #admin1 ul li a:hover{
+      background: none;
+      color: cyan;
+    
+    }
+   #admin1 #check:checked ~ .wrapper1 ul {
+     opacity: 1;
+     visibility: visible;
+   }
+    
+    
+  }
+
+
+
+  @media only screen and (max-width: 1068px) {
+
+    #admin1 ul li a {
+      font-size:14px ;
+      padding-right: 2px;
+
+
+  
+  }
+
+  
+  
+  
