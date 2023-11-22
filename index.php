@@ -43,7 +43,7 @@ body {
 
             <input type="submit" name="submit" value="Login" class="btn-primary" id="btn6">
             <br><br>
-            <p>Don't have an account? <a href="/onlinefood-order/register.php">Create an Account.</a></p>
+            <p>Don't have an account? <a href="/online-food-order/register.php">Create an Account.</a></p>
             </form>
             <!-- Login Form Ends HEre -->
 

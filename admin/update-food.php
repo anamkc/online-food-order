@@ -114,7 +114,7 @@
                                     
                                     //echo "<option value='$category_id'>$category_title</option>";
                                     ?>
-                                    <option <?php if($current_category==$category_id){echo "selected";} ?> value="<?php echo $category_id; ?>"><?php echo $category_title; ?></option>
+                                    <option <?php if($current_category==$category_id){echo"selected";} ?> value="<?php echo $category_id; ?>"><?php echo $category_title; ?></option>
                                     <?php
                                 }
                             }

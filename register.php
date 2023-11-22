@@ -30,7 +30,7 @@ body {
 
             <input type="submit" name="submit" value="Sign Up" class="btn-primary" id="btn6">
             <br><br>
-            <p>Already have an account? <a href="/onlinefood-order/index.php">Log In.</a></p>
+            <p>Already have an account? <a href="/online-food-order/index.php">Log In.</a></p>
 </form>
 </div>
 </body>
